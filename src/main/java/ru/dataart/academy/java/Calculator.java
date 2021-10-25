@@ -60,7 +60,7 @@ public class Calculator {
             ZipInputStream zin = new ZipInputStream(new FileInputStream(zipFilePath));
             ZipEntry entry;
             while ((entry = zin.getNextEntry()) != null) {
-                FileOutputStream fout = new FileOutputStream("zz.txt");
+                FileOutputStream fout = new FileOutputStream("fl.txt");
                 for (int c = zin.read(); c != -1; c = zin.read()) {
                     fout.write(c);
 
